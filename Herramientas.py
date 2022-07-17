@@ -25,4 +25,6 @@ class UtilsPlot():
         for i, image in enumerate(list_images):
             plt.subplot(n_filas, n_cols, i+1)
             PlotByPixelMatrix(image)
+            plt.xticks([])
+            plt.yticks([])
         plt.show()
