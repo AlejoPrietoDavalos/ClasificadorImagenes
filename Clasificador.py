@@ -62,6 +62,9 @@ def train(model, optimizer, epochs, loader_train):
     for epoch in range(epochs):
         accum_loss = 0.
         for i, (x, y) in enumerate(loader_train):
+            #print(x[0])
+            #print(x[0].shape)
+            #input()
             #poner modelo en modo de entrenamiento
             model.train()
 
